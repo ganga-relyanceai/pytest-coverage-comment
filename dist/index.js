@@ -16888,7 +16888,7 @@ const getOptions = (options = {}, line = {}) => ({
   ...options,
   title: line.title,
   covFile: line.covFile,
-  hideReport: false,
+  hideReport: true,
   xmlFile: line.xmlFile,
   xmlTitle: '',
 });
