@@ -16916,7 +16916,7 @@ const getMultipleReport = (options) => {
       if (coverage.html) {
         table += `| ${l.title} | ${coverage.html}`;
 
-        if (i === 0) {
+        
           core.startGroup(internalOptions.covFile);
           core.info(`coverage: ${coverage.coverage}`);
           core.info(`color: ${coverage.color}`);
@@ -16942,7 +16942,7 @@ const getMultipleReport = (options) => {
             });
             core.endGroup();
           }
-        }
+        
       } else if (summary) {
         table += `| ${l.title} |  `;
       }
